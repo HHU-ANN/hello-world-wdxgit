@@ -124,7 +124,7 @@ def main(data):
     return data @ weight
 
 def model(x, y):
-    # 基础的最小二乘实现线性回归
+    # 基础的最小二乘法实现线性回归
     # $(X^TX)^-1(X^Ty)$
     return np.dot(np.linalg.inv(np.dot(x.T, x)), np.dot(x.T, y))
 
